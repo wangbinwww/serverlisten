@@ -13,7 +13,9 @@ app.get('/', function (req, res) {
     });
 });
 
+//监听3000端口，用于接收传过来的信息。
 app.listen(3000, () => {
-    console.log(moment().tz("Asia/bejing").format())
+    //console.log(moment().tz("Asia/Taiwan").format('LLLL'))
+    console.log(moment().format())
     console.log("http://localhost:3000")
 })
